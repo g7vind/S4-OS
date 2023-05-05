@@ -2,7 +2,7 @@
 #include<string.h>
 struct process{
 	char name[20];
-	int at,bt,tt,wt,st;
+	int at,bt,tt,wt;
 }p[50],temp;
 struct chart{
 	int ct,st;
@@ -22,7 +22,6 @@ void main()
 		scanf("%d",&p[i].at);
 		printf("\nEnter the burst time : ");
 		scanf("%d",&p[i].bt);
-		p[i].st=0;
 	}
 	for(i=0;i<n;i++)
 	{
