@@ -1,2 +1,4 @@
-# S4-OS
-Each branch contains each sections
+#contains scheduling programs
+##First come first serve(fcfs)
+##shortest job first(sjf)
+###preemptive & non preemptive
