@@ -2,4 +2,4 @@
 ## First come first serve(fcfs)
 ## Shortest job first(sjf)
 ## Priority scheduling
-## Round robin
+## Round robin scheduling
