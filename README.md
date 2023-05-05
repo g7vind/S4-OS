@@ -1,4 +1,5 @@
-# contains scheduling programs
+# Contains scheduling programs
 ## First come first serve(fcfs)
-## shortest job first(sjf)
-### preemptive & non preemptive
+## Shortest job first(sjf)
+## Priority scheduling
+## Round robin
