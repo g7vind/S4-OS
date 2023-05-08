@@ -4,4 +4,4 @@
 ## [Shortest job first(sjf preemptive)](sjf(preemptive).c)
 ## [Priority scheduling(non-preemptive)](prio(non-preemptive).c)
 ## [Priority scheduling(preemptive)](prio(preemptive).c)
-## Round robin scheduling
+## [Round robin scheduling](rr.c)
