@@ -48,9 +48,9 @@ void main()
         pthread_create(&r[i],NULL,reader,&rw[i]);}
     for(j=0;j<write;j++){
         wt[j] = j+1;
-        pthread_create(&r[j],NULL,writer,&wt[j]);}
+        pthread_create(&w[j],NULL,writer,&wt[j]);}
     for(i=0;i<read;i++)
         pthread_join(r[i],NULL);
     for(j=0;j<write;j++)
-        pthread_join(r[j],NULL);
+        pthread_join(w[j],NULL);
 }
