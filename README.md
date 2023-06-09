@@ -1,2 +1,2 @@
 # DeadLock Avoidance
-## [Bankers Algorithm]()
+## [Bankers Algorithm](bankers.c)
