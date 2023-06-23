@@ -59,7 +59,7 @@ void main()
     		s=s+(tr[j+1]-tr[j]);
     		printf("%d-->",tr[j]);
     	}
-    	printf("199-->0-->");
+    	printf("%d-->0-->",size);
     	s=s+(size-0);
     	for(j=1;j<i;j++)
     	{
