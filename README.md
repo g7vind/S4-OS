@@ -21,3 +21,4 @@ Each branch contains each sections
 ## [FCFS Disk Scheduling](https://github.com/g7vind/S4-OS/blob/disk-scheduling/dfcs1.c)
 ## [SCAN Disk Scheduling](https://github.com/g7vind/S4-OS/blob/disk-scheduling/dscan1.c)
 ## [CSCAN Disk Scheduling](https://github.com/g7vind/S4-OS/blob/disk-scheduling/cscan.c)
+## [LOOK Disk Scheduling](https://github.com/g7vind/S4-OS/blob/disk-scheduling/look.c)
