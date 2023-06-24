@@ -13,3 +13,11 @@ Each branch contains each sections
 ## [dining-philosopher](https://github.com/g7vind/S4-OS/blob/binary-semaphore/dining-philo.c)
 # DeadLock Avoidance
 ## [Bankers Algorithm](https://github.com/g7vind/S4-OS/blob/DeadLock-Avoidance/bankers.c)
+# Memory Alocation Statergies
+## [Best Fit](https://github.com/g7vind/S4-OS/blob/memory-allocation/bfit.c)
+## [First Fit](https://github.com/g7vind/S4-OS/blob/memory-allocation/ffit.c)
+## [Worst Fit](https://github.com/g7vind/S4-OS/blob/memory-allocation/wfit.c)
+# Disk Scheduling
+## [FCFS Disk Scheduling](https://github.com/g7vind/S4-OS/blob/disk-scheduling/dfcs1.c)
+## [SCAN Disk Scheduling](https://github.com/g7vind/S4-OS/blob/disk-scheduling/dscan1.c)
+## [CSCAN Disk Scheduling](https://github.com/g7vind/S4-OS/blob/disk-scheduling/cscan.c)
