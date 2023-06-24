@@ -1,3 +1,4 @@
+#include<stdio.h>
 void main(){
     int i,j,n,m,block[10],size[10],frag[10],status[10],alloc[10],b_size[10],highest=10000;
     printf("\nEnter the number of blocks : ");
