@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <Stdlib.h>
+#include <stdlib.h>
 void firstfit(int n, int b[], int m, int p[])
 {
     printf("\n--------------------------FIRST FIT------------------------");
