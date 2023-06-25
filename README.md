@@ -17,6 +17,7 @@ Each branch contains each sections
 ## [Best Fit](https://github.com/g7vind/S4-OS/blob/memory-allocation/bfit.c)
 ## [First Fit](https://github.com/g7vind/S4-OS/blob/memory-allocation/ffit.c)
 ## [Worst Fit](https://github.com/g7vind/S4-OS/blob/memory-allocation/wfit.c)
+## [Menu(Another Method)](https://github.com/g7vind/S4-OS/blob/memory-allocation/mem.c)
 # Disk Scheduling
 ## [FCFS Disk Scheduling](https://github.com/g7vind/S4-OS/blob/disk-scheduling/dfcs1.c)
 ## [SCAN Disk Scheduling](https://github.com/g7vind/S4-OS/blob/disk-scheduling/dscan1.c)
