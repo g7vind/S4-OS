@@ -1,75 +1,82 @@
 #include <stdio.h>
-#include <stdlib.h>
+int n, m, i, j, h, p, temp, k, total = 0;
+int t[100], a[100], diff, size;
 void main()
 {
-	int i, j, n, k, num, mov = 0, track[50], end, temp;
-	printf("\nEnter the number of tracks : ");
-	scanf("%d", &n);
-	printf("\nEnter the tracks : ");
-	for (i = 3; i <= n + 2; i++)
-		scanf("%d", &track[i]);
-	printf("\nEnter the disk size : ");
-	scanf("%d", &end);
-	printf("\nEnter the start head : ");
-	scanf("%d", &num);
-	track[0] = 0;
-	track[1] = num;
-	track[2] = end - 1;
-	end = end - 1;
-	n = n + 3;
-	for (i = 0; i < n - 1; i++)
-	{
-		for (j = 0; j < n - i - 1; j++)
-		{
-			if (track[j] > track[j + 1])
-			{
-				temp = track[j];
-				track[j] = track[j + 1];
-				track[j + 1] = temp;
-			}
-		}
-	}
-	for (i = 0; i < n; i++)
-	{
-		if (track[i] == num)
-		{
-			k = i;
-			break;
-		}
-	}
-	if ((num - 0) <= (end - num))
-	{
-		for (j = k; j > 0; j--)
-		{
-			mov += (track[j] - track[j - 1]);
-			printf("%d -> ", track[j]);
-		}
-		printf("0 -> ");
-		mov = mov + (track[k + 1] - 0);
-		for (j = k + 1; j < n - 2; j++)
-		{
-			mov += (track[j + 1] - track[j]);
-			printf("%d -> ", track[j]);
-		}
-		printf("%d", track[n - 2]);
-		printf("\n");
-		printf("Total Seek Time : %d\n", mov);
-	}
-	else if ((num - 0) > (end - num))
-	{
-		for (j = i; j < n - 1; j++)
-		{
-			mov += (track[j + 1] - track[j]);
-			printf("%d -> ", track[j]);
-		}
-		printf("%d -> ", end);
-		mov += (end - track[i - 1]);
-		for (j = i - 1; j > 1; j--)
-		{
-			mov += (track[j] - track[j - 1]);
-			printf("%d -> ", track[j]);
-		}
-		printf("%d", track[1]);
-		printf("\nTotal Seek time : %d\n", mov);
-	}
+    printf("ENTER THE NUMBER OF TRACKS : ");
+    scanf("%d", &n);
+    printf("ENTER THE HEAD POINTER POSITION : ");
+    scanf("%d", &h);
+    printf("ENTER THE SIZE OF DISK : ");
+    scanf("%d", &size);
+    printf("ENTER THE TRACKS TO BE TRAVERSED : ");
+    for (i = 0; i < n; i++)
+    {
+        scanf("%d", &t[i]);
+    }
+    t[n + 2] = size - 1;
+    t[n + 1] = 0;
+    t[n] = h;
+    n = n + 3;
+    for (i = 0; i < n; i++)
+    {
+        for (j = 0; j < n - i - 1; j++)
+        {
+            if (t[j] > t[j + 1])
+            {
+                temp = t[j];
+                t[j] = t[j + 1];
+                t[j + 1] = temp;
+            }
+        }
+    }
+    for (i = 0; i < n; i++)
+    {
+        if (t[i] == h)
+        {
+            k = i;
+            break;
+        }
+    }
+    if (h < (size - h))
+    {
+        for (i = k; i >= 0; i--, p++)
+        {
+            a[p] = t[i];
+        }
+        for (i = k + 1; i < n - 1; i++, p++)
+        {
+            a[p] = t[i];
+        }
+    }
+    else
+    {
+        for (i = k; i < n; i++, p++)
+        {
+            a[p] = t[i];
+        }
+        for (i = k - 1; i >= 0; i--, p++)
+        {
+            a[p] = t[i];
+        }
+    }
+    printf("TRAVERSED ORDER : ");
+    for (i = 0; i < p; i++)
+    {
+        printf("%d => ", a[i]);
+    }
+    for (total = 0, j = 0; j < p - 1; j++)
+    {
+        diff = 0;
+        if (a[j] > a[j + 1])
+        {
+            diff = a[j] - a[j + 1];
+        }
+        else
+        {
+            diff = a[j + 1] - a[j];
+        }
+        total = total + diff;
+    }
+    printf("\b\b\b.  \nTOTAL HEAD MOVEMENTS : %d\n", total);
 }
